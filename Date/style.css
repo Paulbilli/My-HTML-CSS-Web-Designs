@@ -1,0 +1,164 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.header {
+ width: 100%;
+ height: 100vh;
+ background-image: url(images/background.png);
+ background-position: center;
+ background-size: cover;
+ color: #fff;
+ padding: 0 7%;
+ position: relative;
+}
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 0 10px;
+}
+nav ul li {
+ margin: 10px 30px;
+ display: inline-block;
+ list-style: none;
+}
+.logo {
+ width: 160px;
+ cursor: pointer;
+}
+nav ul li a {
+ text-decoration: none;
+ color: #fff;
+ font-size: 17px;
+ letter-spacing: 1px;
+}
+nav ul li a:hover {
+ color: #ff3e3b;
+}
+.text-box {
+ margin-top: 16%;
+ font-size: 22px;
+}
+.text-box h1 {
+ font-size: 85px;
+ font-weight: 600;
+ line-height: 100px;
+ margin-bottom: 10px;
+}
+.text-box .btn {
+ outline: none;
+ border: none;
+ font-size: 16px;
+ margin-top: 30px;
+ background: #ff3e3b;
+ color: #fff;
+ padding: 14px 40px;
+ cursor: pointer;
+ transition: 0.3s;
+}
+.text-box .btn:hover {
+ transform: scale(1.05);
+}
+.download {
+ position: absolute;
+ right: 7%;
+ bottom: 60px;
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+ color: #fff;
+ padding: 20px 40px;
+ border-radius: 40px;
+ transition: 0.5s;
+}
+
+.download img {
+ width: 25px;
+ margin-left: 15px;
+ animation: move 2s linear infinite;
+}
+@keyframes move {
+ 0% {
+  transform: translateY(-10px);
+ }
+ 50% {
+  transform: translateY(10px);
+ }
+ 100% {
+  transform: translateY(-10px);
+ }
+}
+.download:hover {
+ background: #ff3e3b;
+}
+nav .fa-bars {
+ display: none;
+}
+@media (max-width: 700px) {
+ .logo {
+  width: 100px;
+  position: fixed;
+  top: 4%;
+  left: 7%;
+ }
+ nav {
+  position: fixed;
+  top: 0;
+  right: 28px;
+  z-index: 100;
+  display: inline-block;
+  width: 100%;
+  padding: 30px 20px 0px 30%;
+  background: #ff3e3b;
+  text-align: right;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  margin-top: -20px;
+ }
+ nav ul li {
+  display: block;
+  margin-right: 14px;
+ }
+ nav ul {
+  margin-top: 70px;
+ }
+ nav .fa-bars {
+  display: block;
+  position: fixed;
+  top: 4%;
+  right: 12%;
+  font-size: 25px;
+ }
+ .hidemenu {
+  max-height: 300px;
+ }
+ .text-box {
+  font-size: 10px;
+  margin-top: 80px;
+ }
+ .text-box h1 {
+  font-size: 50px;
+  line-height: 60px;
+  padding-top: 60px;
+ }
+
+ .text-box p {
+  font-size: 18px;
+  margin-top: 20px;
+ }
+ .text-box .btn {
+  margin-top: 20%;
+  font-size: 15px;
+  padding: 13px 18px;
+ }
+
+ .download {
+  bottom: 100px;
+  right: -8%;
+ }
+}

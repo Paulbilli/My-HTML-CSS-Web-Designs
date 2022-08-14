@@ -1,0 +1,98 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla</title>
+  <link rel="stylesheet" href="style.css" />
+  <script
+   src="https://kit.fontawesome.com/46d99b2bbd.js"
+   crossorigin="anonymous"
+  ></script>
+ </head>
+ <body>
+  <div class="header" id="header">
+   <nav id="navBar">
+    <img src="images/logo.png" class="logo" />
+    <ul>
+     <li><a href="#" id="models">Model S</a></li>
+     <li><a href="#" id="model3">Model 3</a></li>
+     <li><a href="#" id="modelx">Model X</a></li>
+     <li><a href="#" id="modely">Model Y</a></li>
+    </ul>
+    <a href="#" class="btn">Reserve Now</a>
+    <i class="fa-solid fa-bars" id="bars"></i>
+   </nav>
+
+   <div class="info">
+    <div>
+     <h2 id="speed">1.9 s</h2>
+     <p>Top Speed</p>
+    </div>
+    <div>
+     <h2 id="mph">200 mph</h2>
+     <p>mph</p>
+    </div>
+    <div>
+     <h2 id="range">396 mi</h2>
+     <p>Max Range</p>
+    </div>
+    <div class="line"></div>
+    <div>
+     <h2 id="model">Model S</h2>
+    </div>
+   </div>
+  </div>
+  <script>
+   var header = document.getElementById("header");
+   var ms = document.getElementById("models");
+   var m3 = document.getElementById("model3");
+   var mx = document.getElementById("modelx");
+   var my = document.getElementById("modely");
+   var model = document.getElementById("model");
+   var speed = document.getElementById("speed");
+   var mph = document.getElementById("mph");
+   var range = document.getElementById("range");
+
+   ms.onclick = function () {
+    header.style.backgroundImage = "url(images/image-1.png)";
+    model.innerHTML = "Model S";
+    speed.innerHTML = "1.9 s";
+    mph.innerHTML = "200mph";
+    range.innerHTML = "396 mi";
+   };
+   m3.onclick = function () {
+    header.style.backgroundImage = "url(images/image-2.png)";
+    model.innerHTML = "Model 3";
+    speed.innerHTML = "4.3s";
+    mph.innerHTML = "170mph";
+    range.innerHTML = "280 mi";
+   };
+   mx.onclick = function () {
+    header.style.backgroundImage = "url(images/image-3.png)";
+    model.innerHTML = "Model X";
+    speed.innerHTML = "2.3s";
+    mph.innerHTML = "280mph";
+    range.innerHTML = "450 mi";
+   };
+   my.onclick = function () {
+    header.style.backgroundImage = "url(images/image-4.png)";
+    model.innerHTML = "Model Y";
+    speed.innerHTML = "3.3s";
+    mph.innerHTML = "140mph";
+    range.innerHTML = "126 mi";
+   };
+
+   // ==============nav==================
+
+   var navBar = document.getElementById("navBar");
+   const bars = document.getElementById("bars");
+   bars.onclick = () => {
+    navBar.classList.toggle("hidemenu");
+   };
+   //  function togglebtn() {
+   //   navBar.classList.toggle("hidemenu");
+   //  }
+  </script>
+ </body>
+</html>

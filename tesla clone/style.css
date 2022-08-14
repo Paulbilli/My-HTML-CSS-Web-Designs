@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/image-1.png);
+  background-color: rgb(0, 0, 0, 0.5);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 0 7%;
+  transition: background-image 1s;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  flex: 1;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+.logo {
+  width: 320px;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 7%;
+  transition: 0.3s;
+}
+nav .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.info {
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+}
+.info div {
+  margin: 0 20px;
+}
+.info div h2 {
+  font-size: 44px;
+  font-weight: 400;
+}
+.info .line {
+  flex: 1;
+  background: #fff;
+  height: 4px;
+}
+nav .fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 40px 20px 20px 30%;
+    background: rgb(114, 111, 108);
+    text-align: right;
+    max-height: 90px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-top: -40px;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 8px;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  nav ul {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  nav .fa-bars {
+    display: block;
+    position: fixed;
+    top: 2%;
+    right: 7%;
+    font-size: 26px;
+    color: #fff;
+  }
+  nav .btn {
+    padding: 5px 5px;
+    margin-right: 7px;
+  }
+  .hidemenu {
+    max-height: 300px;
+  }
+  .info {
+    width: 100%;
+    font-size: 20px;
+    padding: 0 2%;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+  }
+  .info div {
+    margin: 20px 5px;
+  }
+  .info div h2 {
+    font-size: 18px;
+  }
+  .info div p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

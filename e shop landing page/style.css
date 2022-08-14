@@ -1,0 +1,139 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+.header {
+ width: 100%;
+ height: 100vh;
+ padding: 0 10%;
+ background: #f7efef;
+}
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 0;
+ position: relative;
+ z-index: 100;
+}
+nav ul li {
+ display: inline-block;
+ list-style: none;
+ margin: 10px 30px;
+}
+nav ul li a {
+ text-decoration: none;
+ color: #3f51b5;
+}
+.text-box {
+ margin-top: 130px;
+ max-width: 600px;
+}
+.text-box h1 {
+ font-weight: 600;
+ font-size: 45px;
+ margin-bottom: 20px;
+ color: #3f51b5;
+}
+.text-box p {
+ line-height: 30px;
+}
+.text-box a {
+ display: inline-block;
+ text-decoration: none;
+ color: #fff;
+ background: #3f51b5;
+ padding: 10px 30px;
+ font-size: 18px;
+ margin-top: 50px;
+ border-radius: 6px;
+ transition: 0.4s;
+}
+.text-box a:hover {
+ background: #192779;
+ color: #fff;
+}
+.user-box {
+ background: #d9e0ff;
+ position: absolute;
+ top: 0px;
+ right: 10%;
+ z-index: 1;
+ /* bottom: 45%; */
+}
+.user-box img {
+ display: block;
+ padding-top: 100px;
+ width: 320px;
+ margin-bottom: -150px;
+}
+nav .fa-bars {
+ display: none;
+}
+@media screen and (max-width: 700px) {
+ .logo {
+  width: 90px;
+  position: fixed;
+  top: 4%;
+  left: 5%;
+ }
+ nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: inline-block;
+  width: 100%;
+  padding: 30px 20px 20px 0;
+  background: #f7efef;
+  text-align: right;
+  max-height: 70px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  /* margin-top: -40px; */
+ }
+
+ nav ul li {
+  display: block;
+  margin-right: 7px;
+ }
+ nav ul {
+  margin-top: 40px;
+ }
+ nav .fa-bars {
+  display: block;
+  position: fixed;
+  top: 4%;
+  right: 7%;
+  font-size: 25px;
+ }
+ .hidemenu {
+  max-height: 300px;
+ }
+ .user-box {
+  background: none;
+  position: absolute;
+  left: 20%;
+  top: 0%;
+ }
+ .user-box img {
+  width: 180px;
+  margin-bottom: 50px;
+ }
+ .text-box {
+  margin-top: 69px;
+  padding-top: 100%;
+ }
+ .text-box h1 {
+  font-size: 30px;
+ }
+ .text-box p {
+  font-size: 14px;
+ }
+ .text-box a {
+  margin-top: 20px;
+ }
+}
