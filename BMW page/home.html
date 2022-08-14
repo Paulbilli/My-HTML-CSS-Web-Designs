@@ -1,0 +1,49 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bike</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <div class="container" id="bike">
+   <nav>
+    <img src="images/logo.png" class="logo" />
+    <a href="#" class="btn">Test Drive</a>
+   </nav>
+   <div class="content">
+    <h2>THE BMW</h2>
+    <h1>GT CATI 77</h1>
+    <p>
+     The World is On the Streets. Only the Kings of pace can Survive With the
+     new GT DUCATI 77, the work is done. Feel the passion from the speed and
+     turbo.
+    </p>
+    <h3>Choose Your Colour</h3>
+    <div class="color-select">
+     <div id="red" title="red"></div>
+     <div id="blue" title="blue"></div>
+     <div id="black" title="black"></div>
+    </div>
+   </div>
+  </div>
+  <script>
+   let redBtn = document.getElementById("red");
+   let blueBtn = document.getElementById("blue");
+   let blackBtn = document.getElementById("black");
+   let bike = document.getElementById("bike");
+
+   redBtn.onclick = () => {
+    bike.style.backgroundImage = "url(images/BMW1.png)";
+   };
+
+   blueBtn.onclick = () => {
+    bike.style.backgroundImage = "url(images/BMW2.png)";
+   };
+   blackBtn.onclick = () => {
+    bike.style.backgroundImage = "url(images/BMW3.png)";
+   };
+  </script>
+ </body>
+</html>
